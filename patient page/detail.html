@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Detail</title>
+    <link rel="stylesheet" href="detail.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title"> Patient Details</h1>
+            <form id="myForm">
+                <div class="input-class">
+                    <div class="input-field">
+                        <!-- <label for="name">Name:</label> -->
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-field">
+                        <!-- <label for="age">Age:</label> -->
+                        <input type="number" id="age" name="age" placeholder="Enter your age">
+                    </div>
+                    <div class="input-field">
+                        <!-- <label for="address">Address:</label> -->
+                        <input type="text" id="address" name="address" placeholder="Enter your address">
+                    </div>
+                    <div class="input-field">
+                        <!-- <label for="mobile-no">Mobile Number:</label> -->
+                        <input type="tel" id="mobile-no" name="mobile-no" placeholder="Enter your mobile number">
+                    </div>
+                    <div class="input-field">
+                        <label for="disease-history">Do you have any disease history?</label>
+                        <select id="disease-history" name="disease-history" required>
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="saveid">Save</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="detail.js"></script>
+    
+</body>
+</html>
